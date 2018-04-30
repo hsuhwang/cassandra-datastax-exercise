@@ -27,7 +27,7 @@ object FlightInfoApp {
             .config("spark.cassandra.connection.port", "9042")
             .getOrCreate()
 
-        new FlightInfoBackup().runBasicDataSourceExample(spark)
+        new FlightInfo().runBasicDataSourceExample(spark)
         spark.stop()
     }
 }
